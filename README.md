@@ -22,7 +22,6 @@ Projekt służy do analizy i klasyfikacji ruchu sieciowego w celu rozróżnienia
 
 -   `bot*_*.py` – skrypty generujące ruch botów
 -   `run_all_bots.py` – uruchamianie wszystkich botów
--   `human_traffic.pcapng`, `bot_traffic.pcapng` – pliki z ruchem sieciowym
 -   `process_pcap_1s.py`, `process_pcap_5s.py` – ekstrakcja cech z PCAP
 -   `labled_trafic_1s.csv`, `labled_trafic_5s.csv` – cechy z okien czasowych
 -   `train_evaluate.py` – główny skrypt do trenowania i ewaluacji (dla danych z `labled_trafic.csv` - domyślnie 5s)
@@ -45,8 +44,20 @@ pip install scikit-learn pandas numpy matplotlib seaborn scapy scrapy selenium w
 ## Sposób użycia
 
 1.  **Przygotowanie środowiska i danych**
-    *   Upewnij się, że masz zainstalowane wszystkie wymagane pakiety.
-    *   Umieść pliki PCAP z ruchem ludzkim (`human_traffic.pcapng`) i botów (`bot_traffic.pcapng`) w głównym katalogu projektu. Możesz też wygenerować ruch botów za pomocą dostarczonych skryptów (`bot*_*.py` i `run_all_bots.py`).
+    *   Upewnij się, że masz zainstalowane wszystkie wymagane pakiety (zobacz sekcję "Wymagania").
+    *   **Przygotowanie plików PCAP:** Ten projekt wymaga dwóch plików PCAP do analizy:
+        *   `human_traffic.pcapng`: Zawierający zarejestrowany ruch sieciowy typowego użytkownika.
+        *   `bot_traffic.pcapng`: Zawierający zarejestrowany ruch sieciowy wygenerowany przez boty.
+    *   **Generowanie i przechwytywanie ruchu botów:**
+        *   Repozytorium zawiera skrypty (`bot1_scrapy_crawler.py`, `bot2_selenium_browser.py`, itd.) oraz główny skrypt `run_all_bots.py` do symulowania aktywności botów.
+        *   Aby wygenerować ruch botów, uruchom `run_all_bots.py`:
+            ```bash
+            python run_all_bots.py
+            ```
+        *   Podczas działania tych skryptów, musisz **jednocześnie przechwytywać ruch sieciowy** za pomocą narzędzia takiego jak [Wireshark](https://www.wireshark.org/) lub `tcpdump`. Zapisz przechwycony ruch jako `bot_traffic.pcapng` w głównym katalogu projektu.
+    *   **Przechwytywanie ruchu ludzkiego:**
+        *   Podobnie, wygeneruj ruch ludzki (np. przeglądając strony internetowe, korzystając z aplikacji) i przechwyć go za pomocą Wiresharka lub `tcpdump`. Zapisz ten ruch jako `human_traffic.pcapng` w głównym katalogu projektu.
+    *   **Umieszczenie plików PCAP:** Po ich przygotowaniu, pliki `human_traffic.pcapng` i `bot_traffic.pcapng` muszą znajdować się w głównym katalogu projektu, aby skrypty przetwarzające mogły je znaleźć. Pliki te **nie są** częścią repozytorium i musisz je dostarczyć samodzielnie.
 
 2.  **Ekstrakcja cech z plików PCAP**  
     Uruchom skrypty, aby przetworzyć pliki PCAP i wygenerować pliki CSV z cechami:
