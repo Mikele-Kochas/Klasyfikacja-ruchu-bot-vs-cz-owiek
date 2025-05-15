@@ -1,0 +1,255 @@
+
+===== Results for 5s Window =====
+
+--- Model: KNN (5s Window) ---
+
+  Overall Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 1.0000  |
+| Precision | 1.0000  |
+| Recall    | 1.0000  |
+| F1-Score  | 1.0000  |
+
+  Non-Empty Windows Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 1.0000  |
+| Precision | 1.0000  |
+| Recall    | 1.0000  |
+| F1-Score  | 1.0000  |
+
+  Empty Windows Classification Report:
+N/A
+
+-------------------------
+--- Model: SVM (5s Window) ---
+
+  Overall Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 1.0000  |
+| Precision | 1.0000  |
+| Recall    | 1.0000  |
+| F1-Score  | 1.0000  |
+
+  Non-Empty Windows Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 1.0000  |
+| Precision | 1.0000  |
+| Recall    | 1.0000  |
+| F1-Score  | 1.0000  |
+
+  Empty Windows Classification Report:
+N/A
+
+-------------------------
+--- Model: Random Forest (5s Window) ---
+
+  Overall Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 1.0000  |
+| Precision | 1.0000  |
+| Recall    | 1.0000  |
+| F1-Score  | 1.0000  |
+
+  Non-Empty Windows Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 1.0000  |
+| Precision | 1.0000  |
+| Recall    | 1.0000  |
+| F1-Score  | 1.0000  |
+
+  Empty Windows Classification Report:
+N/A
+
+-----------------------------------
+--- Model: Voting Classifier (5s Window) ---
+
+  Overall Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 1.0000  |
+| Precision | 1.0000  |
+| Recall    | 1.0000  |
+| F1-Score  | 1.0000  |
+
+  Non-Empty Windows Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 1.0000  |
+| Precision | 1.0000  |
+| Recall    | 1.0000  |
+| F1-Score  | 1.0000  |
+
+  Empty Windows Classification Report:
+N/A
+
+---------------------------------------
+--- Model: Stacking Classifier (5s Window) ---
+
+  Overall Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 1.0000  |
+| Precision | 1.0000  |
+| Recall    | 1.0000  |
+| F1-Score  | 1.0000  |
+
+  Non-Empty Windows Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 1.0000  |
+| Precision | 1.0000  |
+| Recall    | 1.0000  |
+| F1-Score  | 1.0000  |
+
+  Empty Windows Classification Report:
+N/A
+
+-----------------------------------------
+
+==============================
+
+===== Results for 1s Window =====
+
+--- Model: KNN (1s Window) ---
+
+  Overall Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 0.9115  |
+| Precision | 0.9165  |
+| Recall    | 0.9115  |
+| F1-Score  | 0.9110  |
+
+  Non-Empty Windows Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 0.9637  |
+| Precision | 0.9637  |
+| Recall    | 0.9637  |
+| F1-Score  | 0.9637  |
+
+  Empty Windows Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 0.5704  |
+| Precision | 0.3253  |
+| Recall    | 0.5704  |
+| F1-Score  | 0.4143  |
+
+-------------------------
+--- Model: SVM (1s Window) ---
+
+  Overall Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 0.9056  |
+| Precision | 0.9170  |
+| Recall    | 0.9056  |
+| F1-Score  | 0.9045  |
+
+  Non-Empty Windows Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 0.9569  |
+| Precision | 0.9587  |
+| Recall    | 0.9569  |
+| F1-Score  | 0.9568  |
+
+  Empty Windows Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 0.5704  |
+| Precision | 0.3253  |
+| Recall    | 0.5704  |
+| F1-Score  | 0.4143  |
+
+-------------------------
+--- Model: Random Forest (1s Window) ---
+
+  Overall Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 0.9420  |
+| Precision | 0.9478  |
+| Recall    | 0.9420  |
+| F1-Score  | 0.9416  |
+
+  Non-Empty Windows Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 0.9989  |
+| Precision | 0.9989  |
+| Recall    | 0.9989  |
+| F1-Score  | 0.9989  |
+
+  Empty Windows Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 0.5704  |
+| Precision | 0.3253  |
+| Recall    | 0.5704  |
+| F1-Score  | 0.4143  |
+
+-----------------------------------
+--- Model: Voting Classifier (1s Window) ---
+
+  Overall Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 0.9322  |
+| Precision | 0.9390  |
+| Recall    | 0.9322  |
+| F1-Score  | 0.9317  |
+
+  Non-Empty Windows Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 0.9875  |
+| Precision | 0.9876  |
+| Recall    | 0.9875  |
+| F1-Score  | 0.9875  |
+
+  Empty Windows Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 0.5704  |
+| Precision | 0.3253  |
+| Recall    | 0.5704  |
+| F1-Score  | 0.4143  |
+
+---------------------------------------
+--- Model: Stacking Classifier (1s Window) ---
+
+  Overall Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 0.9420  |
+| Precision | 0.9478  |
+| Recall    | 0.9420  |
+| F1-Score  | 0.9416  |
+
+  Non-Empty Windows Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 0.9989  |
+| Precision | 0.9989  |
+| Recall    | 0.9989  |
+| F1-Score  | 0.9989  |
+
+  Empty Windows Classification Report:
+| Metryka   | Wartość |
+|-----------|---------|
+| Accuracy  | 0.5704  |
+| Precision | 0.3253  |
+| Recall    | 0.5704  |
+| F1-Score  | 0.4143  |
+
+-----------------------------------------
+
+==============================

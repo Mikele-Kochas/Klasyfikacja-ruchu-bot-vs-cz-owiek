@@ -1,0 +1,21 @@
+*.pcapng
+*.pcap
+
+# Pliki cache Pythona
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pliki środowisk wirtualnych
+.env
+.venv
+venv/
+ENV/
+env/
+
+# Pliki generowane przez system operacyjny
+.DS_Store
+Thumbs.db
+
+# Foldery z pobranymi plikami przez boty (jeśli takie są i nie chcesz ich wersjonować)
+downloaded_files/ 
